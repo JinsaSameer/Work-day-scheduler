@@ -19,7 +19,10 @@ var txtInput7 = document.querySelector("#txt7");
 var txtInput8 = document.querySelector("#txt8");
 var txtInput9 = document.querySelector("#txt9");
 
-
+//current time
+var today = moment().format("MMMM  Do  YYYY");
+$("#currentDay").text(today);
+console.log(today);
 
 var currentTime = moment().hours();
 console.log(currentTime,hour9.value);
@@ -326,10 +329,7 @@ console.log(storage.txt9);
 document.querySelector("#txt9").textContent = storage.txt9;
 
 
-//current time
-var today = moment().format("MMMM  Do  YYYY");
-$("#currentDay").text(today);
-console.log(today);
+
 
 
 //Time interval
